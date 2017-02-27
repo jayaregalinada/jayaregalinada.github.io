@@ -30,3 +30,8 @@ footer {
     background-color: $brand-primary;
     display: block;
 }
+
+a, a:hover, a:visited {
+    text-decoration: underline;
+    color: $font-color;
+}
