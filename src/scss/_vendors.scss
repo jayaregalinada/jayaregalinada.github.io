@@ -1,0 +1,20 @@
+.vendors {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (min-width: 599px) {
+        width: 600px;
+    }
+    img {
+        width: 40px;
+        max-height: 40px;
+        order: 1;
+        display: inline;
+        margin: 4px;
+        align-self: center;
+    }
+}
