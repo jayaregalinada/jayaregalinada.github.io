@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+:root {
+  --color-primary: #1c80ce;
+  --font-size: 1.5rem;
+  --font-family: Inconsolata, monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: calc(var(--font-size) * 2);
+}
+
+a,
+a:hover,
+a:visited {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+main {
+  width: 100dvw;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+}
+
+header {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 5fr;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+article {
+  display: grid;
+  gap: 0.5rem;
+}
+
+@media (min-width: 1280px) {
+  article {
+    text-align: justify;
+  }
+}
+
+.container {
+  max-width: 768px;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.vendors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: space-around;
+
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 0.25s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: all 0.25s;
+
+    path {
+      fill: var(--color-primary);
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
