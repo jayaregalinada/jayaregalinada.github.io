@@ -78,7 +78,7 @@ header {
 }
 
 .eyebrow {
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: var(--color-primary);
@@ -86,7 +86,7 @@ header {
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--color-heading);
   letter-spacing: -0.02em;
@@ -94,7 +94,7 @@ h1 {
 }
 
 .role {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   color: var(--color-subtext);
 }
 
@@ -102,7 +102,7 @@ h1 {
 article {
   display: grid;
   gap: 0.75rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.75;
   border-left: 2px solid rgba(28, 128, 206, 0.4);
   padding-left: 1rem;
@@ -134,7 +134,7 @@ a:focus-visible {
 }
 
 .stack-label {
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: var(--color-primary);
@@ -153,7 +153,7 @@ a:focus-visible {
   color: var(--color-tag);
   border-radius: 20px;
   padding: 0.25rem 0.75rem;
-  font-size: 0.6875rem;
+  font-size: 0.8125rem;
   font-family: var(--font-family);
   font-weight: 700;
 }
