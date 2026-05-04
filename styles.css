@@ -167,35 +167,42 @@ a:focus-visible {
 /* ── FOOTER ── */
 footer {
   display: flex;
-  gap: 1.25rem;
-  align-items: center;
-  border-top: 1px solid rgba(28, 128, 206, 0.15);
+  gap: 0.625rem;
+  flex-wrap: wrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding-top: 1.25rem;
-  position: relative;
+}
+
+footer a,
+footer a:visited {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 footer a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.75rem;
-  color: var(--color-primary);
-  font-weight: 700;
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 400;
   text-decoration: none;
-  transition: opacity 0.2s;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0.5rem 0.875rem;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
 footer a:hover {
-  opacity: 0.75;
+  background: rgba(255, 255, 255, 0.11);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 1);
   text-decoration: none;
 }
 
 .social-icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 7px;
-  background: rgba(28, 128, 206, 0.12);
-  border: 1px solid rgba(28, 128, 206, 0.3);
+  width: 14px;
+  height: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,11 +212,6 @@ footer a:hover {
 .social-icon svg {
   width: 14px;
   height: 14px;
-  transition: transform 0.2s;
-}
-
-footer a:hover .social-icon svg {
-  transform: scale(1.15);
 }
 
 /* ── RESPONSIVE ── */
