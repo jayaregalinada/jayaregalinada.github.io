@@ -98,6 +98,12 @@ h1 {
   color: var(--color-subtext);
 }
 
+.tagline {
+  font-size: 0.8125rem;
+  color: var(--color-tag);
+  opacity: 0.85;
+}
+
 /* ── ARTICLE / BIO ── */
 article {
   display: grid;
